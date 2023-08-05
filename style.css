@@ -1,0 +1,37 @@
+
+
+body{
+
+    background-color: black;
+}
+
+.container{
+    border: 1px solid yellow ;
+    text-align: center;
+   margin-top: 200px;
+
+    
+    
+}
+
+h1{
+    color: white;
+}  
+
+.col{
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+.form-select,.Number,.Converted{
+    width: 200px;
+    height: 20px;
+}
+
+.btn{
+    background-color: yellow;
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
