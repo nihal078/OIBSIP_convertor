@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter Website using html, css & JavaScript</title>
+    <!-- css link -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Convertor</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+
+
+      
+
+  </head>
+  <body>
     <div class="container">
-        <div class="one">
-            <h1> Temperature Converter</h1>
-            <div class="row">
-                <div class="col">
-                    <label for="">Degree</label>
-                    <input type="number" placeholder="Enter Your Number " class="Number">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <select class="form-select">
-                        <option >Type</option>
-                        <option value="cel" id="cel">Celcius</option>
-                        <option value="fah" id="fah">Farenhit</option>
+        <div class="temperature-converter">
+            
 
-                    </select>
-                </div>
+            <h1 class="title">Temperature Converter</h1>
+
+            
+
+            <!-- input field -->
+            <div class="degree-type">
+                <!-- for degrees -->
+              <div class="degree-field">
+                <label for="degree">Degrees</label>
+                <input type="number" name="degree" id="degree" />
+              </div>
+
+              <!-- for option selection -->
+              <div class="temp-field">
+                <label for="temp-type">Type</label>
+                <select name="temperatures" id="temp-type" autocomplete="on">
+                  <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
+                  <option id="kelvin" value="kelvin">Kelvin</option>
+                </select>
+              </div>
             </div>
-            <div class="row">
-                <div class="col ">
-                    <button class="btn">Converted</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input type="number" placeholder="Converted" class="Converted">
-                </div>
-            </div>
+            <button id="convert-btn">Convert</button>
+            <div class="result">
+                <span class="result-heading">Result (Celsius)</span>
+                <h2 class="celsius-value" id="celsius"></h2>
+              </div>
+            
         </div>
-    </div>
-
-  
-
-
+      </div>
+    
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
